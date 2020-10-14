@@ -1,0 +1,17 @@
+<div @helper class="helper">
+  <p>{{textHelper}}</p>
+  <div class="navigation">
+    <div class="prev" *ngIf="numberPage>0" (click)="navigate('prev')">
+      <img src="../../../assets/img/arrow.svg">
+      назад
+    </div>
+    <div class="next" *ngIf="numberPage<2" (click)="navigate('next')">
+      вперед
+      <img src="../../../assets/img/arrow.svg">
+    </div>
+  </div>
+  <div class="page-number">
+    {{numberPage + 1}}/{{pages.length}}
+  </div>
+</div>
+
