@@ -1,0 +1,31 @@
+.helper {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  margin-top: 3px;
+  padding: 5px;
+  min-width: min-content;
+  max-width: 100%;
+
+  .navigation {
+    display: flex;
+    margin: 15px 0 5px 0;
+    color: #00a1fa;
+
+    .prev {
+      cursor: pointer;
+    }
+
+    .next {
+      margin-left: auto;
+      cursor: pointer;
+
+      img {
+        transform: rotate(-180deg);;
+      }
+    }
+  }
+
+  .page-number {
+    color: #6f6f6f;
+  }
+}
